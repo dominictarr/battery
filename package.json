@@ -2,7 +2,7 @@
   "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
   "name": "battery",
   "description": "command to check battery life",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/dominictarr/battery",
   "repository": {
     "type": "git",
