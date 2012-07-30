@@ -10,15 +10,22 @@ info () {
 
 life () {
   l=`state | grep 'remaining capacity'`
-  echo ${l#remaining capacity:}
+  c=`state | grep 'charging state'`
+  c=${c#charging state:}
+  c=${c%%discharging}
+  echo ${l#remaining capacity:} $c
 }
 
 help () {
   cat ./README.markdown
 }
 
+status () {
+  state
+}
+
 case "$1" in
-  state|info|life|help) $1 ;;
+  state|info|life|help|status) $1 ;;
   *) life ;;
 esac
 
