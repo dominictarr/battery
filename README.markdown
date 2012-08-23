@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/dominictarr/battery.png)](http://travis-ci.org/dominictarr/battery)
 # battery
 
 ```
